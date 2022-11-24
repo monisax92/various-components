@@ -1,0 +1,30 @@
+.btn{
+    background-color: $secondColor;
+    color: $lightGray;
+    font-size: 1.2rem;
+    letter-spacing: 1.5;
+    padding: 20px 50px;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    display: block;
+}
+
+.circle{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%) scale(1);
+    animation: zoom .5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes zoom{
+    to {
+        transform: translate(-50%, -50%) scale(2);
+        opacity: 0;
+    } 
+}

@@ -1,0 +1,26 @@
+.nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: $mainColor;
+    position: sticky;
+    top: 0;
+
+    &__links{
+        display: flex;
+        flex-direction: row; 
+        list-style-type: none;
+    }
+
+    &__link a{
+        display: inline-block;
+        color: $lightGray;
+        padding: 15px 20px;
+        font-weight: 500;
+        transition: all .3s;
+
+        &:hover{
+            background-color: $lightGray;
+            color: $mainColor;
+        }
+    }
+}

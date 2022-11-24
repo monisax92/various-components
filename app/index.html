@@ -1,12 +1,61 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web components</title>
-    <link rel="stylesheet" href="./assets/styles/style.css">
+    <!-- <link rel="stylesheet" href="./assets/styles/styles.css"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
 <body>
-    
+    <nav class="nav">
+        <ul class="nav__links">
+            <li class="nav__link"><a>Home</a></li>
+            <li class="nav__link"><a>About us</a></li>
+            <li class="nav__link"><a>Team</a></li>
+            <li class="nav__link"><a>Contact</a></li>
+        </ul>
+
+        <div class="search-box">
+            <input type="text" class="search-box__input" placeholder="What do you need?">
+            <button class="search-box__search-btn">
+                <span class="material-symbols-outlined">
+                    search
+                </span>
+            </button>
+        </div>
+    </nav>
+
+    <section class="full-screen-section">
+        <div class="squares">
+            <div class="squares__controls">
+                <div class="squares__controls__buttons">
+                    <div class="squares__controls-group">
+                        <h2>animation speed:</h2>
+                        <button class="btn-control" data-setting="speed" data-speed="40">slow</button>
+                        <button class="btn-control" data-setting="speed" data-speed="3">normal</button>
+                        <button class="btn-control" data-setting="speed" data-speed=".5">fast</button>
+                    </div>
+
+                    <div class="squares__controls-group">
+                        <h2>color range:</h2>
+                        <button class="btn-control" data-setting="color" data-color-range="0">redish</button>
+                        <button class="btn-control" data-setting="color" data-color-range="100">greenish</button>
+                        <button class="btn-control" data-setting="color" data-color-range="200">blueish</button>
+                        <button class="btn-control" data-setting="color" data-color-range="360">various colors</button>
+                    </div>
+                </div>
+                
+                <div class="squares__controls__slider-box">
+                    <input type="range" id="slider" value="70" min="0" max="100">
+                    <p>Saturation: <span class="squares__controls__slider-info">70</span>%</p>
+                </div>
+            </div>
+            <div class="squares__board"></div>
+        </div>
+    </section>
+
+    <button href="#" class="btn btn--dot-animation center">
+        Click me!
+    </button>
 </body>
 </html>
