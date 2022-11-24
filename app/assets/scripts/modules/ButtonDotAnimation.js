@@ -7,8 +7,8 @@ const randomColorRGB = () => {
 };
 
 const animateBtn = e => {
-  const clickCordX = e.clientX;
-  const clickCordY = e.clientY;
+  const clickCordX = e.pageX;
+  const clickCordY = e.pageY;
 
   const btnCordX = e.target.offsetLeft;
   const btnCordY = e.target.offsetTop;
@@ -22,6 +22,14 @@ const animateBtn = e => {
 
   e.target.appendChild(circle);
 
+  //   console.log(
+  //     clickCordX,
+  //     btnCordX,
+  //     circle.style.left,
+  //     clickCordY,
+  //     btnCordY,
+  //     circle.style.top
+  //   );
   setTimeout(() => {
     circle.remove();
   }, 500);
