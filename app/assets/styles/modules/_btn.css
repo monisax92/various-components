@@ -10,6 +10,24 @@
     cursor: pointer;
     overflow: hidden;
     display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+
+    &--project-link{
+        color: $thirdColor;
+        background-color: $lightGray;
+        border: solid 3px $thirdColor;
+        padding: 10px 20px;
+        margin-top: 1rem;
+        font-weight: 600;
+        transition: all .2s ease-in-out;
+
+        &:hover{
+            color: $lightGray;
+            background-color: $thirdColor;
+        }
+    }
 }
 
 .circle{

@@ -1,6 +1,7 @@
-@import "base/_global.css";
 @import "base/_variables.css";
+@import "base/_global.css";
 
 @import "modules/_btn.css";
 @import "modules/_nav.css";
 @import "modules/_search-box.css";
+@import "modules/_project.css";
